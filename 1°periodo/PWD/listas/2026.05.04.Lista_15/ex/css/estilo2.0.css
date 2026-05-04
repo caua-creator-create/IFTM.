@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Links */
+a:link, a:visited{ 
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Menu */
+ul{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+li{
+    border-bottom: 2px solid transparent;
+}
+
+.face{
+    text-align: center;
+    background: url('../img/faceBlack.png') no-repeat center 5px;
+    padding-top: 30px;
+}
+.face:hover{
+    border-bottom: 2px solid blue;
+    background-image: url('../img/face.png');
+}
+.face a:hover{
+    color: blue;
+}
+
+.insta{
+    text-align: center;
+    background: url('../img/instaBlack.png') no-repeat center 5px;
+    padding-top: 30px;
+}
+.insta:hover{
+    border-bottom: 2px solid rgb(170, 6, 185);
+    background-image: url('../img/insta.png');
+}
+.insta a:hover{
+    color: rgb(170, 6, 185);
+}
+
+.maps{
+    text-align: center;
+    background: url('../img/mapsBlack.png') no-repeat center 5px;
+    padding-top: 30px;
+}
+.maps:hover{
+    border-bottom: 2px solid green;
+    background-image: url('../img/maps.png');
+}
+.maps a:hover{
+    color: green;
+}
+
+.twitter{
+    text-align: center;
+    background: url('../img/twitterBlack.png') no-repeat center 5px;
+    padding-top: 30px;
+}
+.twitter:hover{
+    border-bottom: 2px solid yellow;
+    background-image: url('../img/twitter.png');
+}
+.twitter a:hover{
+    color: yellow;
+}
+
+.you{
+    text-align: center;
+    background: url('../img/youtubeBlack.png') no-repeat center 5px;
+    padding-top: 30px;
+}
+.you:hover{
+    border-bottom: 2px solid red;
+    background-image: url('../img/youtube.png');
+}
+.you a:hover{
+    color: red;
+}

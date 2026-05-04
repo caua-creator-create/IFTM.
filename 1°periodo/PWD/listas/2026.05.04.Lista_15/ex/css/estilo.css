@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* Link inicial ( antes do click ), Link Visitado ( após o clique )*/
+a:link, a:visited{ 
+    color:gray;
+}
+/* Link com mouse sobre ele */
+/* a:hover{ 
+    color:yellow;
+    background-color: green;
+     border-bottom: 2px solid yellow; 
+}  
+/* Link ativo ( está sendo clicado )*/
+/* a:active{ 
+    color:red;
+    background-color: white;
+} */
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    /* transition: background 0.5s, color 0.5s; (transição suave de cor e fundo) */
+}
+ul{
+    background-color: black;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* ul  li {
+    color: white;
+    list-style: none;
+
+} */
+
+.face{
+    
+    text-align: center;
+    border: 1px solid black;
+    width: 91px;
+    height: 41px;
+    background-image: url('../img/faceBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 8.43%;
+    padding-top: 40px;
+}
+.face :hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+    background-image: url('../img/face.png');
+}
+
+/* .box{
+    text-align: center;
+    border: 1px solid black;
+    width: 91px;
+    height: 41px;
+    background-image: url('../img/faceBlack.png');
+    background-repeat: no-repeat;
+    background-position: center 8.43%;
+    padding-top: 40px;
+}
+.box :hover{
+    background-image: url('../img/face.png');
+} */
