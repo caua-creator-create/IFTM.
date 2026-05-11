@@ -5,28 +5,18 @@
     transition: 0.5s;
 }
 .box {
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-
-    background-color: rgba(0, 255, 0, 0.762);
-    font-weight: 800;
-
-    border: 2px solid black;
-    border-radius: 50px;
+    /* border: 2px solid black; */
+    /* border-radius: 50px; */
     padding: 5px;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     /* background-color: rgba(255, 228, 196, 0.797); */
     /* position: absolute; */
     position: fixed;
     /* top: 0px; Em cima. */
-     bottom: 10px;/*  Em baixo*/
+     bottom: 0px;/*  Em baixo*/
     /* left: 0px; Na esquerda */
-     right: 10px;/* Na direita*/
+     right: 0px;/* Na direita*/
 }  
-.box:hover{
-    background-color: rgba(2, 107, 2, 0.762);
-    color: whitesmoke;
-    font-weight: 800;
-}
