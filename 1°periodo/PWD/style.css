@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #eeeeee;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #990000;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color: #ff3333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: #ff3333;
+}
+
+/* Hero - Desktop */
+.hero {
+    text-align: center;
+    padding: 160px 20px 100px;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/1920/1080');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao-principal {
+    background-color: #990000;
+    color: white;
+    padding: 16px 34px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.botao-principal:hover {
+    background-color: #cc0000;
+}
+
+/* Seções */
+.secao {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secao h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+    color: #ff4444;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 6px solid #990000;
+}
+
+.card summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 14px 0;
+    font-size: 19px;
+    color: #ffdddd;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.grade-filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 40px;
+}
+
+.card-filme {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* Listas */
+.lista-musicas li, .lista-filmes li {
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+}
+
+/* Login */
+.container-login {
+    padding: 80px 20px;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a1a, #330000);
+}
+
+.card-login {
+    background-color: #1f1f1f;
+    padding: 45px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 460px;
+    text-align: center;
+}
+
+.card-login h1 {
+    color: #ff3333;
+    margin-bottom: 35px;
+}
+
+.grupo {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.grupo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.grupo input {
+    width: 100%;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: white;
+}
+
+.botao-login {
+    width: 100%;
+    padding: 16px;
+    background-color: #990000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao-login:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0a0a0a;
+    color: #666;
+}
+
+/* Responsivo para Pc */
+@media (min-width: 768px) {
+    .hero {
+        padding: 180px 20px 120px;
+    }
+    .secao {
+        padding: 100px 5%;
+    }
+    .conteudo, .grade-filmes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
