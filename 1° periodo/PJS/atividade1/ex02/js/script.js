@@ -1,0 +1,1 @@
+alert("Pressione o botão “Ok”/n Para visualizar o nome da disciplina")

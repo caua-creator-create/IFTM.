@@ -1,0 +1,5 @@
+alert("Informe na ordem pedida o RGP para a cor do nome")
+r = prompt("Informe em números de 0 á 255, R:")
+g = prompt("Informe em números de 0 á 255, G:")
+b = prompt("Informe em números de 0 á 255, B:")
+document.write(`<p style="color: rgb(${r},${g},${b});">Fundamentos e Web Design II</p>`)
