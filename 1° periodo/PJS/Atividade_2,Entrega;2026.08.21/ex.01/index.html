@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Exercício 1</title>
+
+    <script type="text/javascript">
+
+        var nome = prompt("Digite seu primeiro nome:");
+        var sobrenome = prompt("Digite seu sobrenome:");
+        var quantidade = parseInt(prompt("Quantas vezes deseja exibir o nome?"));
+        var cor = prompt("Digite a cor desejada:");
+
+        var nomeCompleto = nome + " " + sobrenome;
+
+        for (var i = 1; i <= quantidade; i++) {
+
+            if (i % 2 == 0) {
+                document.write("<p style='color:" + cor + "'>" 
+                    + i + " - " + nomeCompleto + "</p>");
+            } else {
+                document.write("<p style='color:black'>" 
+                    + i + " - " + nomeCompleto + "</p>");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>

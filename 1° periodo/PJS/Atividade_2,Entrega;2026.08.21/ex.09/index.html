@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Exercício 9</title>
+
+    <script type="text/javascript">
+
+        var texto = prompt("Digite um texto:");
+
+        var original = texto.toLowerCase().replace(/\s/g, "");
+
+        var invertido = original.split("").reverse().join("");
+
+        if (original == invertido) {
+            alert("O texto é um palíndromo.");
+        } else {
+            alert("O texto não é um palíndromo.");
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>

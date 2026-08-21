@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Exercício 7</title>
+
+    <script type="text/javascript">
+
+        var texto = prompt("Digite um texto:");
+        var letra = prompt("Digite uma letra:");
+
+        var palavras = texto.trim().split(/\s+/);
+
+        letra = letra.toLowerCase();
+
+        for (var i = 0; i < palavras.length; i++) {
+
+            if (palavras[i].charAt(0).toLowerCase() == letra) {
+                document.write(palavras[i] + " ");
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>

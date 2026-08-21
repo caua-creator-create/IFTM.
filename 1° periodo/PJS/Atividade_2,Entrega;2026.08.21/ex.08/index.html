@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Exercício 8</title>
+
+    <script type="text/javascript">
+
+        var texto = prompt("Digite um texto:");
+
+        var palavras = texto.trim().split(/\s+/);
+
+        for (var letra = 97; letra <= 122; letra++) {
+
+            var caractere = String.fromCharCode(letra);
+
+            for (var i = 0; i < palavras.length; i++) {
+
+                if (palavras[i].charAt(0).toLowerCase() == caractere) {
+
+                    document.write(palavras[i] + " ");
+
+                }
+
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>
