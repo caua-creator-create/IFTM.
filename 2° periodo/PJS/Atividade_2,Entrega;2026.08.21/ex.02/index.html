@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        nameCompleto = prompt("Digite seu nome completo:").trim();
+
+        if(nameCompleto != null){
+            if(nameCompleto != ""){
+                document.write(`<p>${nameCompleto}.</p>`);
+                document.write(`<p> ${nameCompleto} tem ${nameCompleto.length} caracteres.</p>`);
+            }else{
+                alert("Ou, vc não preencheu com seu nome completo ou está inválido.");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
