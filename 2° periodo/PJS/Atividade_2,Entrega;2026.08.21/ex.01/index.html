@@ -4,14 +4,14 @@
 
     <script type="text/javascript">
 
-        var nome = prompt("Digite seu primeiro nome:");
-        var sobrenome = prompt("Digite seu sobrenome:");
-        var quantidade = parseInt(prompt("Quantas vezes deseja exibir o nome?"));
-        var cor = prompt("Digite a cor desejada:");
+        nome = prompt("Digite seu primeiro nome:");
+        sobrenome = prompt("Digite seu sobrenome:");
+        quantidade = parseInt(prompt("Quantas vezes deseja exibir o nome?"));
+        cor = prompt("Digite a cor desejada:");
 
-        var nomeCompleto = nome + " " + sobrenome;
+        nomeCompleto = nome + " " + sobrenome;
 
-        for (var i = 1; i <= quantidade; i++) {
+        for (i = 1; i <= quantidade; i++) {
 
             if (i % 2 == 0) {
                 document.write("<p style='color:" + cor + "'>" 

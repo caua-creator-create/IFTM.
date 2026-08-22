@@ -1,17 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 6</title>
 
     <script type="text/javascript">
 
-        var texto = prompt("Digite um texto:");
+        texto = prompt("Digite o seu nome:");
 
-        var palavras = texto.trim().split(/\s+/);
+        palavras = texto.trim().split(" ");
 
-        var primeira = palavras[0];
-        var ultima = palavras[palavras.length - 1];
+        primeira = palavras[0];
+        ultima = palavras[palavras.length - 1];
 
-        document.write(primeira + " " + ultima);
+        document.write(`Olá ${primeira} ${ultima}.`);
 
     </script>
 </head>

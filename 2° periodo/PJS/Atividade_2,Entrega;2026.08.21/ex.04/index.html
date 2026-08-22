@@ -1,17 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 4</title>
 
     <script type="text/javascript">
 
-        var nome = prompt("Digite seu nome completo:");
+        nome = prompt("Digite seu nome completo:");
 
-        var palavras = nome.split(" ");
+        palavras = nome.split(" ");
 
-        var primeiroNome = palavras[0];
+        primeiroNome = palavras[0];
 
-        primeiroNome = primeiroNome.charAt(0).toUpperCase() 
-                     + primeiroNome.slice(1).toLowerCase();
+        primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
 
         alert(primeiroNome);
 

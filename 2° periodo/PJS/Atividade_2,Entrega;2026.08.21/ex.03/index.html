@@ -1,16 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 3</title>
 
     <script type="text/javascript">
 
-        var nome = prompt("Digite seu nome completo:");
+        nome = prompt("Digite seu nome completo:");
 
-        alert(nome.toUpperCase());
+        // 1° passo: Converte tudo em minusculas, e após isso metódo "banana" split, separa em partes;
+        nome = nome.toLowerCase().split(" ");
+        // 2° passo: Pega A primeira parte [0], e coloca em UpperCase para o português letras maiúsculas;
+        nome[0] = nome[0].toUpperCase();
+        // 3: passo: Converter o vetor para String;
+        nome = nome.join(" ");
+
+        alert(nome);
 
     </script>
 </head>
 
 <body>
 </body>
+
 </html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Exercício 1</title>
+
+    <script type="text/javascript">
+
+        text = prompt("Entre com o texto:").trim().split(" ");
+        letraProcura = prompt("Qual letra vc quer que seja trocada?:");
+        letraTrocar = prompt("Qual será a letra que está sendo trocada?:");
+
+        for(i =0;i<text.length;i++){
+            if(text[i].charAt(0) == letraProcura){
+                x = text[i].split("");
+                x[0] = letraTrocar;
+                text[i] = x.join;
+            }
+        }
+        text = text.join("");
+        alert(text);
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>

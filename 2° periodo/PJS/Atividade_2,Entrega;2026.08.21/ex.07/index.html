@@ -4,14 +4,14 @@
 
     <script type="text/javascript">
 
-        var texto = prompt("Digite um texto:");
-        var letra = prompt("Digite uma letra:");
+        texto = prompt("Digite um texto:");
+        letra = prompt("Digite uma letra:");
 
-        var palavras = texto.trim().split(/\s+/);
+        palavras = texto.trim().split(/\s+/);
 
         letra = letra.toLowerCase();
 
-        for (var i = 0; i < palavras.length; i++) {
+        for (i = 0; i < palavras.length; i++) {
 
             if (palavras[i].charAt(0).toLowerCase() == letra) {
                 document.write(palavras[i] + " ");

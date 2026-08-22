@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Exercício 1</title>
+
+    <script type="text/javascript">
+
+        nome = prompt("Digite seu primeiro nome completo:").trim().split(" ");
+        
+        sigla = "";
+        
+        for(i = 0;i< nome.length;i++){
+            let qv= nome[i].split("").length();
+            if(qv > 2){// Só concatena palavras artigo ou pre-posições
+                sigla += nome[i].charAt(0);
+            }
+        }
+        document.write(`A sigla do seu nome é ${sigla}`);
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>
