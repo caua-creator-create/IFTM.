@@ -17,9 +17,9 @@
 
         btn = document.getElementById("btnTestar");
 
-        btn.addEventlistener("click",exibirMsg);
-        btn.addEventlistener("mouseout", exibirMsg2);
-        btn.addEventlistener("mousemove", exibirMsg3);
+        btn.addEventListener("click",exibirMsg);
+        btn.addEventListener("mouseout", exibirMsg2);
+        btn.addEventListener("mousemove", exibirMsg3);
 
         function exibirMsg(){
             alert("Olá, sou o seu robô!")
@@ -30,7 +30,12 @@
         }
 
         function exibirMsg3(){
-            alert("Pare de fazer cócegas!")
+            //if(controle > 100){
+                alert("Pare de fazer cócegas!");
+            //    controle = 0;
+            //}else{
+            //    controle++;
+            //}
         }
 
 
