@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026/08/28 exemplo 00.</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+
+    <script type="text/javascript" defer>
+
+        btn = document.getElementById("btnTestar");
+
+        btn.addEventlistener("click",exibirMsg);
+        btn.addEventlistener("mouseout", exibirMsg2);
+        btn.addEventlistener("mousemove", exibirMsg3);
+
+        function exibirMsg(){
+            alert("Olá, sou o seu robô!")
+        }
+
+        function exibirMsg2(){
+            alert("Até logo");
+        }
+
+        function exibirMsg3(){
+            alert("Pare de fazer cócegas!")
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <input type="button" value="Testar" id="btnTestar">
+    </form>
+
+</body>
+</html>
