@@ -5,29 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 01</title>
     
-    <script type="text/javascript" defer>
-
-        nome = document.getElementById("nome");
-        button = document.getElementById("button");
-
-
-        button.addEventListener("click", acionar);
-
-        function acionar(){
-
-            texto = nome.value.trim();
-
-            while(true){
-                if(texto != "" && texto != null){
-                    alert(texto);
-                    return;
-                }else{
-                    texto = prompt("Digite seu nome, por favor:");
-                }
-            }
-        }
-
-    </script>
     <style>
         *{
             box-sizing: border-box;
@@ -47,4 +24,27 @@
 </form>
 
 </body>
+
+<script type="text/javascript">
+    nome = document.getElementById("nome");
+    button = document.getElementById("button");
+
+
+    button.addEventListener("click", acionar);
+
+    function acionar(){
+
+        texto = nome.value.trim();
+
+        while(true){
+            if(texto != "" && texto != null){
+                alert(texto);
+                return;
+            }else{
+                texto = prompt("Digite seu nome, por favor:");
+            }
+        }
+    }
+</script>
+
 </html>
