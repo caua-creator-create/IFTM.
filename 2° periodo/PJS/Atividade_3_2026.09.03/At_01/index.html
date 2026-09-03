@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    
+    <script type="text/javascript" defer>
+
+        nome = document.getElementById("nome");
+        button = document.getElementById("button");
+
+
+        button.addEventListener("click", acionar);
+
+        function acionar(){
+
+            texto = nome.value.trim();
+
+            while(true){
+                if(texto != "" && texto != null){
+                    alert(texto);
+                    return;
+                }else{
+                    texto = prompt("Digite seu nome, por favor:");
+                }
+            }
+        }
+
+    </script>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<form>
+    <label>Nome:</label>
+    <input type="text" id="nome">
+    <button type="button" id="button">Exibir</button>
+</form>
+
+</body>
+</html>
