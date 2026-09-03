@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+        btnDobrar = document.getElementById("btnDobrar");
+        txtValor = document.getElementById("txtValor");
+        txtResultado = document.getElementById("txtResultado");
+
+        btnDobrar.addEventListener("click", dobrarValor);
+
+
+        function dobrarValor(){
+            txtResultado.value = txtValor.value * 2;
+        }
+    </script>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <label>Digite um valor:</label>
+        <input type="text" value="0" id="txtValor">
+        <input type="button" value="Mostrar o dobro" id="btnDobrar">
+        <br>
+        <label>O dobro é :</label>
+        <input type="text" id="txtResultado">
+
+    </form>
+
+</body>
+</html>

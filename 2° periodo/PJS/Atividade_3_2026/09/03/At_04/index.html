@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+        txtNota = document.getElementById("txtNota");
+        txtNota2 = document.getElementById("txtNota2");
+        btnResultado = document.getElementById("btnResultado");
+
+        btnResultado.addEventListener("click", calcularNota);
+
+
+        function calcularNota(){
+            notaFinal = parseFloat(txtNota.value) + parseFloat(txtNota2.value);
+            if(txtNota.value < 0 || txtNota2.value < 0 || txtNota.value > 50 || txtNota2.value > 50 ){
+                if(notaFinal >= 60){
+                    alert("Aprovado");
+                }else{
+                    alert(`Reprovado. Faltou ${60 - notaFinal} pontos`);
+                }
+            }
+        }
+        
+    </script>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <label>Nome(1° Bimestre):</label>
+        <input type="number" id="txtNota">
+        <br>
+        <label>Nome(2° Bimestre):</label>
+        <input type="number" id="txtNota2">
+        <br>
+        <input type="button" value="Resultado" id="btnResultado">
+
+    </form>
+
+</body>
+</html>
