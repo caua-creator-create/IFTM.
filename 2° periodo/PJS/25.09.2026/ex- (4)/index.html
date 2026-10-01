@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <label>Usuario:</label>
+        <input type="text" id="txt">
+        <br>
+        <label>Senha:</label>
+        <input type="password" id="senha">
+        <br>
+        <button type="button" id="button">Click</button>
+
+    </form>
+
+</body>
+
+<script>
+    document.getElementById("button").addEventListener("click", function() {
+    txt = document.getElementById("txt");
+    senha = document.getElementById("senha");
+
+    pessoa = {
+        usuario : txt.value,
+        senha : senha.value
+    };
+
+    localStorage.setItem("usuario", JSON.stringify(pessoa));
+});
+
+    
+</script>
+
+</html>

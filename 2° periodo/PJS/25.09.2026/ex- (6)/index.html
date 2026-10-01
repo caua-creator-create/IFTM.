@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <label>Usuario:</label>
+        <input type="text" id="texto">
+        <br>
+        <label>Senha:</label>
+        <input type="password" id="senha">
+        <br>
+        <button type="button" id="button">Click</button>
+
+    </form>
+</body>
+
+<script>
+    users  = JSON.parse(localStorage.getItem("usuarios"));
+
+    for(i = 0; i < users.pessoa.length; i++){
+        document.write(`<p>${users.pessoa[i].usuario}</p>`)
+    }
+
+    console.log(users);
+</script>
+
+</html>

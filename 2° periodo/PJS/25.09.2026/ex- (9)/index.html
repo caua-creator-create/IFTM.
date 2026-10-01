@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f6f9;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 380px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        label {
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #444444;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus {
+            border-color: #007bff;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Login</h1>
+        <label>Nome:</label>
+        <input type="text" id="txt">
+        <br>
+        <label>Senha:</label>
+        <input type="password" id="senha">
+        <br>
+        <button type="button" id="button">Click</button>
+
+    </form>
+</body>
+
+<script>
+
+document.getElementById("button").addEventListener("click", function(){
+    const txt = document.getElementById("txt").value;
+    const senha = document.getElementById("senha").value;
+
+    const listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    let usuarioExiste = false;
+
+    for (let i = 0; i < listaUsuarios.length; i++) {
+        if (listaUsuarios[i].usuario === txt && listaUsuarios[i].senha === senha) {
+            usuarioExiste = true;
+            break;
+        }
+    }
+
+    if (usuarioExiste) {
+        alert("USUÁRIO JÁ EXISTENTE");
+    } else {
+        alert("USUÁRIO INEXISTENTE");
+    }
+        const novoUsuario = {usuario : txt, senha : senha};
+        
+        listaUsuarios.push(novoUsuario);
+        
+        localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
+
+    }
+)
+</script>
+
+</html>
