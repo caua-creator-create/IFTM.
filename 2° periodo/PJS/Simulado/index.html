@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao sistema</title>
+
+<style>
+
+    * {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 100%;
+    width: 1200px;
+    margin: 50px auto;
+    color: green;
+}
+
+fieldset {
+    border: 2px solid green;
+    padding: 30px 40px;
+}
+legend{
+    text-align: center;
+}
+input {
+    width: 85%;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: none;
+    color: green;
+}
+
+button {
+    display: block;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+</style>
+
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Acesso ao sistema</legend>
+
+        <label>Nome completo:</label>
+        <input type="text" id="txt">
+
+        <button type="button" id="bnt">Entrar</button>
+
+    </fieldset>
+</form>
+
+    
+</body>
+
+<script>
+
+    prompt("Olá, seja bem-vindo!")
+
+    document.getElementById("bnt").addEventListener("click", function(){
+        nome = document.getElementById("txt").value.trim().split(" ");
+        if(nome.length >= 2){
+            let primeiro = nome[0];
+            let ultimo = nome[nome.length - 1];
+            let resultado = primeiro + " " + ultimo; 
+            localStorage.setItem("nomeUsuario", nome );
+            window.location.href = "menu.html";
+        }else{
+            alert("Por favor informe pelo menos NOME + SOBRENOME.")
+        }
+    })
+
+</script>
+
+</html>

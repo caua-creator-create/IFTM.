@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de opções</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    color: green;
+    margin: auto;
+    padding: auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+
+input {
+    width: 85%;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: none;
+}
+
+button {
+    display: block;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <h1 id="frase"></h1>
+    <button type="button" id="bnt">Entrar</button>
+
+    
+</body>
+
+<script>
+
+    let nome = localStorage.getItem("nomeUsuario");
+
+    document.getElementById("frase").textContent = nome + ", seja bem-vindo ao jogo dos Felino!";
+    document.getElementById("bnt").addEventListener("click", function(){
+        window.location.href = "felino.html";
+    })
+
+</script>
+
+</html>
