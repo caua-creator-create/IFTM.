@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Exercício 2</title>
+<style>
+</style>
+</head>
+<body>
+<form>
+<input type="text" id="c1" placeholder="Caixa 1">
+<input type="text" id="c2" placeholder="Caixa 2">
+<select id="tempo">
+<option value="1">1 s</option>
+<option value="2">2 s</option>
+<option value="3">3 s</option>
+<option value="4">4 s</option>
+<option value="5">5 s</option>
+<option value="6">6 s</option>
+<option value="7">7 s</option>
+<option value="8">8 s</option>
+<option value="9">9 s</option>
+<option value="10">10 s</option>
+</select>
+<button type="button" onclick="transferir()">Mover</button>
+</form>
+</body>
+<script>
+function transferir() {
+  const t = parseInt(document.getElementById('tempo').value, 10);
+  setTimeout(() => {
+    const orig = document.getElementById('c1');
+    const dest = document.getElementById('c2');
+    dest.value = orig.value;
+    orig.value = '';
+  }, t * 1000);
+}
+</script>
+</html>

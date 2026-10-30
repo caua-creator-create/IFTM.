@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Exercício 5</title>
+<style>
+</style>
+</head>
+<body>
+<div id="lista"></div>
+</body>
+<script>
+const n = parseInt(prompt("Quantos nomes quer inserir?"), 10);
+const lista = [];
+if (!isNaN(n) && n > 0) {
+  for (let i = 0; i < n; i++) {
+    lista.push(prompt(`Nome ${i + 1}:`));
+  }
+  const box = document.getElementById('lista');
+  let idx = 0;
+  const loop = setInterval(() => {
+    if (idx < lista.length) {
+      const p = document.createElement('div');
+      p.textContent = lista[idx];
+      box.appendChild(p);
+      idx++;
+    } else {
+      clearInterval(loop);
+    }
+  }, 1000);
+}
+</script>
+</html>
